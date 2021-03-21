@@ -15,88 +15,86 @@
         android:layout_height="wrap_content">
     </androidx.appcompat.widget.Toolbar>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_below="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#26262D"
-    tools:context=".ui.main.view.DetailActivity">
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_photo"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
-        android:layout_margin="24dp">
-        <ImageView
-            android:id="@+id/img_detail"
+        android:layout_height="match_parent">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/s"
-            android:scaleType="centerCrop"/>
-    </androidx.cardview.widget.CardView>
+            android:layout_height="match_parent"
+            android:background="#26262D"
+            tools:context=".ui.main.view.DetailActivity">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="24dp">
+                <ImageView
+                    android:id="@+id/img_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/s"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
 
 
-    <TextView
-        android:id="@+id/txt_title_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_below="@+id/cv_photo"
-        android:layout_marginHorizontal="24dp"
-        android:fontFamily="@font/montserrat"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="Segera Hadir di Indonesia, OPPO Reno5 F Penuhi Kebutuhan Anak Muda - Okezone"/>
+            <TextView
+                android:id="@+id/txt_title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@+id/cv_photo"
+                android:layout_marginHorizontal="24dp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Segera Hadir di Indonesia, OPPO Reno5 F Penuhi Kebutuhan Anak Muda - Okezone"/>
 
-    <it.mike5v.viewmoretextview.ViewMoreTextView
-        android:id="@+id/txt_desc_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="8dp"
-        android:layout_below="@+id/txt_author_detail"
-        android:layout_marginHorizontal="24dp"
-        android:fontFamily="@font/montserrat"
-        android:textSize="16sp"
-        app:ellipsizeText=""
-        app:duration="500"
-        app:visibleLines="5"
-        app:isExpanded="false"
-        android:text="jpnn.com, JAKARTA - Oppo memastikan segera meluncurkan smartphone Reno5 F ke pasar Indonesia pada 24 Maret 2021.\r\nKehadiran ponsel itu akan melengkapi jajaran dari seri Reno yaitu Reno5 dan Reno5 5G
+            <TextView
+                android:id="@+id/txt_desc_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txt_author_detail"
+                android:layout_marginHorizontal="24dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="jpnn.com, JAKARTA - Oppo memastikan segera meluncurkan smartphone Reno5 F ke pasar Indonesia pada 24 Maret 2021.\r\nKehadiran ponsel itu akan melengkapi jajaran dari seri Reno yaitu Reno5 dan Reno5 5G
 "/>
 
-    <TextView
-        android:id="@+id/txt_author_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_below="@+id/txt_title_detail"
-        android:layout_marginHorizontal="24dp"
-        android:fontFamily="@font/montserrat"
-        android:layout_alignParentEnd="true"
-        android:textSize="12sp"
-        android:textColor="@color/white"
-        android:textStyle="italic"
-        android:text="JPNN.com" />
+            <TextView
+                android:id="@+id/txt_author_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/txt_title_detail"
+                android:layout_marginHorizontal="24dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_alignParentEnd="true"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:text="JPNN.com" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_read"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#5D68F8"
-        android:textColor="@color/white"
-        android:layout_below="@id/txt_desc_detail"
-        android:layout_marginBottom="30dp"
-        android:text="Baca Sekarang"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_read"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#5D68F8"
+                android:textColor="@color/white"
+                android:layout_below="@id/txt_desc_detail"
+                android:layout_marginBottom="30dp"
+                android:text="Baca Sekarang"/>
 
-  </RelativeLayout>
+        </RelativeLayout>
 
-</ScrollView>
+    </ScrollView>
 </RelativeLayout>
